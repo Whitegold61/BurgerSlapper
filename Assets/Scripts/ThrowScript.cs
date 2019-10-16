@@ -40,7 +40,7 @@ public class ThrowScript : MonoBehaviour {
             Debug.DrawRay(new Vector3(startPos.x, startPos.y, 0f), (new Vector3(getMousePos().x, getMousePos().y, 0f) - new Vector3(startPos.x, startPos.y, 0f)));
             dragGraphic.localPosition = Vector3.Lerp(new Vector3(startPos.x, startPos.y, 0f), new Vector3(getMousePos().x, getMousePos().y, 0f), 0.5f);
             dragGraphic.localRotation = Quaternion.Euler(0f, 0f, getAng(new Vector3(startPos.x, startPos.y, 0f), new Vector3(getMousePos().x, getMousePos().y, 0f)) + 90f);
-            dragGraphic.localScale = new Vector3(0.1f, (new Vector3(getMousePos().x, getMousePos().y, 0f) - new Vector3(startPos.x, startPos.y, 0f)).magnitude * 0.5f, 0.1f);
+            dragGraphic.localScale = new Vector3(0.01f, (new Vector3(getMousePos().x, getMousePos().y, 0f) - new Vector3(startPos.x, startPos.y, 0f)).magnitude * 0.5f, 0.01f);
         }
         if (Input.GetKey(KeyCode.Mouse0) && !isDragging) {
             isDragging = true;
@@ -112,7 +112,7 @@ public class ThrowScript : MonoBehaviour {
         }
         else if (!Input.GetKey(KeyCode.Mouse0) && isDragging) {
             isDragging = false;
-            dragGraphic.localScale = new Vector3(0.1f, 0f, 0.1f);
+            dragGraphic.localScale = new Vector3(0f, 0f, 0f);
         }
     }
 }
