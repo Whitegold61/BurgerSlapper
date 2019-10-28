@@ -97,7 +97,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -196,7 +196,7 @@ SpriteRenderer:
   m_Size: {x: 4.75, y: 5.19}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &67090757
@@ -275,7 +275,7 @@ SpriteRenderer:
   m_Size: {x: 4.75, y: 5.19}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &275977541
@@ -518,18 +518,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 333968954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c485bed8e2e8424bbdfb85dee186bce, type: 3}
+  m_Script: {fileID: 11500000, guid: cc4f7d335edf1234391d600c23a60b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredients:
-  - {fileID: 5007000102213252178, guid: ce58fb3ba4d3f62429d8ca073e84de77, type: 3}
-  - {fileID: 1991784387561632531, guid: 24da0994518c2254f9f3cefcdacd688d, type: 3}
-  - {fileID: 7638191431961460734, guid: 3bbddd167a08fe04bbcaf8bdfdc0063f, type: 3}
-  - {fileID: 1163864692370823999, guid: 0186f1895554ee441ad210152f55fb9f, type: 3}
-  - {fileID: 2562430620666510734, guid: e4f3507be18580c429a6d9b68b93b573, type: 3}
-  - {fileID: 2562430620666510734, guid: f75d7577d8016e44abc4e2eb9b42f5d8, type: 3}
-  spawnInterval: 0.6
-  spawnVariance: 0.2
+  dragGraphic: {fileID: 275977545}
 --- !u!114 &333968957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,10 +531,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 333968954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a34290e87252124893e46a6544095e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 34eba9245b224b346b57f762a1178608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragGraphic: {fileID: 275977545}
+  ingredients:
+  - {fileID: -927199367670048503, guid: c14b376067a74f3409354a13fcbea923, type: 3}
+  - {fileID: -927199367670048503, guid: b73ac2b13ebbd36419bc8af44c91f040, type: 3}
+  - {fileID: -927199367670048503, guid: e7bb14e7d9d749e488c09a2d0de03f61, type: 3}
+  - {fileID: -927199367670048503, guid: 9834a758dc8ab5247a06f21f709b505d, type: 3}
+  spawnInterval: 1
+  spawnVariance: 0.2
 --- !u!1 &381946506
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,16 +602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c34a8f575711847a7d5e1f0bffa570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredients:
-  - {fileID: 8652699331329340449, guid: 5587485097a68a34fadd2d2c3347b45b, type: 3}
-  - {fileID: 488429649208672659, guid: 90bf285526163c04fb15f3722679356d, type: 3}
-  - {fileID: 192774832506149368, guid: ae5a11c2d95bcf4438bb44c672337eee, type: 3}
-  - {fileID: 1187411596108135036, guid: ca26638340203d34e8afb78861192fd6, type: 3}
-  - {fileID: 4364131185589295376, guid: 42caa73814a631a4c81424bc661104cd, type: 3}
-  - {fileID: 6290814648113496756, guid: 4ae9a08a44c01c34d925073b90bac029, type: 3}
-  customerSprites:
-  - {fileID: 21300000, guid: e07b9142c88ef9646ba775642f47cf4e, type: 3}
-  - {fileID: 21300000, guid: 37968b43bf359a341b3c17892d557f67, type: 3}
 --- !u!65 &381946510
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -703,7 +691,7 @@ SpriteRenderer:
   m_Size: {x: 4.75, y: 5.19}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &418748015
@@ -782,7 +770,7 @@ SpriteRenderer:
   m_Size: {x: 3.79, y: 3.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &462579220
@@ -1160,16 +1148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c34a8f575711847a7d5e1f0bffa570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredients:
-  - {fileID: 8652699331329340449, guid: 5587485097a68a34fadd2d2c3347b45b, type: 3}
-  - {fileID: 488429649208672659, guid: 90bf285526163c04fb15f3722679356d, type: 3}
-  - {fileID: 192774832506149368, guid: ae5a11c2d95bcf4438bb44c672337eee, type: 3}
-  - {fileID: 1187411596108135036, guid: ca26638340203d34e8afb78861192fd6, type: 3}
-  - {fileID: 4364131185589295376, guid: 42caa73814a631a4c81424bc661104cd, type: 3}
-  - {fileID: 6290814648113496756, guid: 4ae9a08a44c01c34d925073b90bac029, type: 3}
-  customerSprites:
-  - {fileID: 21300000, guid: e07b9142c88ef9646ba775642f47cf4e, type: 3}
-  - {fileID: 21300000, guid: 37968b43bf359a341b3c17892d557f67, type: 3}
 --- !u!65 &767615621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1306,7 +1284,7 @@ SpriteRenderer:
   m_Size: {x: 3.79, y: 3.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1052737791
@@ -1417,7 +1395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e8adf16bb186440963e87d79710549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackIngredients: []
 --- !u!65 &1099563686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1475,7 +1452,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099563682}
-  m_Mesh: {fileID: 3736213754101489272, guid: df86dadde6568d24f967f4eac79a1846, type: 3}
+  m_Mesh: {fileID: 3736213754101489272, guid: 4af80f92ca6eb3f478ce949ed6ea58d1, type: 3}
 --- !u!1 &1127309393
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,7 +1514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e8adf16bb186440963e87d79710549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackIngredients: []
 --- !u!65 &1127309397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1595,7 +1571,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127309393}
-  m_Mesh: {fileID: 3736213754101489272, guid: df86dadde6568d24f967f4eac79a1846, type: 3}
+  m_Mesh: {fileID: 3736213754101489272, guid: 4af80f92ca6eb3f478ce949ed6ea58d1, type: 3}
 --- !u!1 &1145291282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,7 +1633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e8adf16bb186440963e87d79710549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackIngredients: []
 --- !u!65 &1145291286
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1715,7 +1690,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145291282}
-  m_Mesh: {fileID: 3736213754101489272, guid: df86dadde6568d24f967f4eac79a1846, type: 3}
+  m_Mesh: {fileID: 3736213754101489272, guid: 4af80f92ca6eb3f478ce949ed6ea58d1, type: 3}
 --- !u!1 &1177584035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2094,16 +2069,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c34a8f575711847a7d5e1f0bffa570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredients:
-  - {fileID: 8652699331329340449, guid: 5587485097a68a34fadd2d2c3347b45b, type: 3}
-  - {fileID: 488429649208672659, guid: 90bf285526163c04fb15f3722679356d, type: 3}
-  - {fileID: 192774832506149368, guid: ae5a11c2d95bcf4438bb44c672337eee, type: 3}
-  - {fileID: 1187411596108135036, guid: ca26638340203d34e8afb78861192fd6, type: 3}
-  - {fileID: 4364131185589295376, guid: 42caa73814a631a4c81424bc661104cd, type: 3}
-  - {fileID: 6290814648113496756, guid: 4ae9a08a44c01c34d925073b90bac029, type: 3}
-  customerSprites:
-  - {fileID: 21300000, guid: e07b9142c88ef9646ba775642f47cf4e, type: 3}
-  - {fileID: 21300000, guid: 37968b43bf359a341b3c17892d557f67, type: 3}
 --- !u!65 &1482862172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2441,7 +2406,7 @@ SpriteRenderer:
   m_Size: {x: 3.79, y: 3.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2126139547
@@ -2485,7 +2450,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9121041964976261454}
-  m_Mesh: {fileID: 3736213754101489272, guid: df86dadde6568d24f967f4eac79a1846, type: 3}
+  m_Mesh: {fileID: 3736213754101489272, guid: 4af80f92ca6eb3f478ce949ed6ea58d1, type: 3}
 --- !u!4 &5246458886998834013
 Transform:
   m_ObjectHideFlags: 0
@@ -2584,7 +2549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e8adf16bb186440963e87d79710549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackIngredients: []
 --- !u!65 &9121041964976261457
 BoxCollider:
   m_ObjectHideFlags: 0
